@@ -6,11 +6,14 @@
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//rawgit.com/benjamingwynn/glitch.js/master/glitch.js"></script>
 	<script type="text/javascript">
-	$(window).onload(function(){
+	(function ($) {
 		// On page load:
-		glitch();
+   		$(document); // Fix jQuery nonsense
+		glitch(); // Start glitch script and clock
+		
+		// Override settings:
 		distort_objects_one_at_a_time = true;
-	});
+	}(jQuery));
 	</script>
 	<style>
 		* {
@@ -29,7 +32,7 @@
 		
 		h2 {
 			color:#696969;
-			text-align:left;
+			text-align:center;
 			font-family: 'Roboto', 'Helvetica', sans-serif;
 			font-weight:300;
 			font-size:30px;
@@ -40,7 +43,7 @@
 			text-align:center;
 			font-family: 'Roboto', 'Helvetica', sans-serif;
 			font-weight:300;
-			font-size: 30px;
+			font-size: 20px;
 			margin-top: 10px;
 			margin-bottom: 0;
 		}
