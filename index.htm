@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <head>
-  <title>glitch.js</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<title>glitch.js - Created by Benjamin Gwynn</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="glitch.js"></script>
-	<script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//raw.githubusercontent.com/benjamingwynn/glitch.js/master/glitch.js"></script>
+	<script type="text/javascript">
 	$(window).onload(function(){
-	  // On page load:
-	  glitch();
+		// On page load:
+		glitch();
+		distort_objects_one_at_a_time = true;
 	});
 	</script>
 	<style>
+		* {
+			margin:0;
+			padding:0;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		h1 {
+			color: #363636;
+			text-align: center;
+			font-family: 'Nova Square';
+			font-size:72px;
+		}
+		
+		h2 {
+			color:#696969;
+			text-align:left;
+			font-family: 'Roboto', 'Helvetica', sans-serif;
+			font-weight:300;
+			font-size:30px;
+		}
+		
+		h3 {
+			color:gray;
+			text-align:center;
+			font-family: 'Roboto', 'Helvetica', sans-serif;
+			font-weight:300;
+			font-size: 30px;
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+		
+		p {
+			color:grey;
+			text-align:center;
+			font-family: 'Roboto', 'Helvetica', sans-serif;
+			font-weight:300;
+			font-size:16px;
+		}
+		
+		
 		#hello h1 {
 			color: #363636;
 			font-family: 'Nova Square';
 		}
+		
 		.content {
 			background: white;
 			border-style: dashed;
 			border-color: #363636;
 			box-shadow: none;
 		}
-		h1 {
-			color: #363636;
-			font-family: 'Nova Square';
-			text-align: center;
-		}
-		h3 {
-			font-size: 30px;
-			text-align:center;
-			margin-bottom: 0;
-			margin-top: 10px;
-		}
-		p {
-			text-align:center;
-		}
 		
-		a:link {text-decoration:underline;}
-		a:visited {text-decoration:underline;}
-		a:hover {text-decoration:underline;}
-		a:active {text-decoration:underline;}
+		a:link {color:#696969; text-decoration:underline;}
+		a:visited {color:#696969; text-decoration:underline;}
+		a:hover {color:#09F; text-decoration:underline;}
+		a:active {color:#09F; text-decoration:underline;}
 	</style>
 </head>
 <body>
