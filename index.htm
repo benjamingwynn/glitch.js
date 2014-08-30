@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>glitch.js</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="glitch.js"></script>
+	<script>
+	$(window).onload(function(){
+	  // On page load:
+	  glitch();
+	});
+	</script>
+	<style>
+		#hello h1 {
+			color: #363636;
+			font-family: 'Nova Square';
+		}
+		.content {
+			background: white;
+			border-style: dashed;
+			border-color: #363636;
+			box-shadow: none;
+		}
+		h1 {
+			color: #363636;
+			font-family: 'Nova Square';
+			text-align: center;
+		}
+		h3 {
+			font-size: 30px;
+			text-align:center;
+			margin-bottom: 0;
+			margin-top: 10px;
+		}
+		p {
+			text-align:center;
+		}
+		
+		a:link {text-decoration:underline;}
+		a:visited {text-decoration:underline;}
+		a:hover {text-decoration:underline;}
+		a:active {text-decoration:underline;}
+	</style>
+</head>
+<body>
+	<div id="hello" class="glitch">
+		<h1 class="glitch">glitch.js</h1>
+		<h2 class="glitch">a fully customizable html5 javascript effect</h2>
+	</div>
+	<div class="content glitch">
+		<h1>Download</h1>
+		<p>You can download this JS script and use it on your website, just use the link below to view the code on Github, then download and configure it as you would with any other script. It'd be awesome if you were to link back to me (or this page) if you decide to use this script.</p>
+		<p><a href="https://github.com/benjamingwynn/glitch.js">Download this on Github</a></p>
+	</div>
+	<div class="content glitch">
+		<h1 class="glitch">FAQ</h1>
+		<h3 class="glitch">How do I use this?</h3>
+		<p class="glitch">Simply include this script and jQuery in your website as with any other external javascript scirpt and load the glitch() function. The add the class="glitch" tag to any object you want to have a glitch effect. Still stuck? Just view the code for this page.</p>
+		<h3 class="glitch">How can I change the settings of this script?</h3>
+		<p class="glitch">Just define them with an overriding script. A better way of doing this is in progress.</p>
+		<h3 class="glitch">I have no idea what any of that means, how do I make all my Google pages look like this?</h3>
+		<p class="glitch">This is designed to be used on individual websites for developers to add.</p>
+		<h3 class="glitch">Can I use this in *whatever*?</h3>
+		<p class="glitch">Yep, I'd like you to link back to me or this page if you could, but if you really don't want to then it's fine.</p>
+		<h3 class="glitch">Does this use jQuery?</h3>
+		<p class="glitch">Yes. As of version 3.0 glitch.js now uses jQuery. If you wish to use glitch.js without jQuery then use a version prior to 3.0.</p>
+		<h3 class="glitch">Why is this HTML5?</h3>
+		<p class="glitch">This uses the box-shadow and text-shadow CSS rule, only used in CSS 3 (HTML5).</p>
+</div>
+	<div class="content glitch" style="max-width:400px;">
+		<h1 class="glitch" style="font-size:20px;">Created by Benjamin Gwynn</h1>
+		<p class="glitch">I make other cool stuff too, check out my <a href="http://github.com/benjamingwynn">Github</a> or <a href="http://xenxier.tk">my website.</a></p>
+	</div>
+</body>
